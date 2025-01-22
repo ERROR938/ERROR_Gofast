@@ -33,6 +33,7 @@ local function StartTrajet(type)
         SetBlipRoute(blip, true)
         SetBlipRouteColour(blip, 5)
         ESX.ShowNotification(("Rendez-vous à la destination, vous avez %s minutes"):format(Config.TimeToDeleteMission), "success")
+        TriggerServerEvent("ERROR_Gofast:Server:AlertPolice")
 
         SetTimeout(Config.TimeToDeleteMission*60000, function()
             if (DoesBlipExist(blip)) then
@@ -121,3 +122,7 @@ lib.registerContext({
         },
     },
 })
+
+RegisterNetEvent("ERROR_Gofast:Client:AlertPolice", function()
+    ESX.ShowAdvancedNotification("Dispatch", "Alerte citoyen", Config.Blip['text'], "CHAR_CALL911")
+end)

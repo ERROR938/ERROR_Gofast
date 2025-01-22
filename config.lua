@@ -17,6 +17,17 @@ Config.rewards = {
     ['big'] = 3000,
 }
 
+Config.Blip = {
+    time = 15, -- temps qu'il reste en secondes,
+    sprite = 42,
+    color = 1,
+    text = "Attention, on me signale un GoFast en cours, soyez attentif !"
+}
+
+Config.AlertJobs = {
+    "hayes",
+}
+
 Config.trajets = {
     ['small'] = {
         vec3(-269.3150, 2194.6628, 129.8297),
