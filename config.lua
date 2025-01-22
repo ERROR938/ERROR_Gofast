@@ -17,13 +17,6 @@ Config.rewards = {
     ['big'] = 3000,
 }
 
-Config.Blip = {
-    time = 15, -- temps qu'il reste en secondes,
-    sprite = 42,
-    color = 1,
-    text = "Attention, on me signale un GoFast en cours, soyez attentif !"
-}
-
 Config.AlertJobs = {
     "police",
 }

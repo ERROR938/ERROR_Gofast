@@ -124,5 +124,5 @@ lib.registerContext({
 })
 
 RegisterNetEvent("ERROR_Gofast:Client:AlertPolice", function()
-    ESX.ShowAdvancedNotification("Dispatch", "Alerte citoyen", Config.Blip['text'], "CHAR_CALL911")
+    ESX.ShowAdvancedNotification("Dispatch", "Alerte citoyen", "Attention, on me signale un GoFast en cours, soyez attentif !", "CHAR_CALL911")
 end)
