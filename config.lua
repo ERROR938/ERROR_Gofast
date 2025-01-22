@@ -25,7 +25,7 @@ Config.Blip = {
 }
 
 Config.AlertJobs = {
-    "hayes",
+    "police",
 }
 
 Config.trajets = {
